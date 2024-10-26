@@ -1,0 +1,29 @@
+.mission-statement {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+.mission-statement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission-statement p {
+    font-size: 1.2rem;
+}
+
+.image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

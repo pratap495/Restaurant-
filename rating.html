@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Ratings</title>
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Ratings</h1>
+        <form action="submit_rating.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <p>Rate out drive care</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>    
+            <br>
+            <br>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <h2>Recent Ratings</h2>
+        <div id="ratings-container">
+            <!-- Ratings will be displayed here -->
+        </div>
+        <button id="load-more" onclick="loadMore()">Load More Ratings</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.services {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.service-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover{
+    color: orange;
+} 

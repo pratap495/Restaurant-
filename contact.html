@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 6 am kitchen - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3>Login 6 am kitchen</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contact">
+        <section class="contact-info">
+            <h1>Have Questions?</h1>
+            <p>Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
+            <p><strong>Emergency? Call Us:</strong></p>
+            <p>+91 9999999999</p>
+            <p><strong>Send Us Mail:</strong></p>
+            <p>xyz@gmail.com</p>
+            <p><strong>Find the Studio:</strong></p>
+            <div class="map-container">
+                <iframe src=""></iframe>
+            </div>
+        </section>
+        <section class="contact-form">
+            <form action="connection.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                
+                <label for="rating">Rate Us</label>
+                    <div class="rating-container">
+                        <input type="radio" id="1-star" name="rating" value="1" required>
+                        <label for="1-star">1</label>
+                        <input type="radio" id="2-star" name="rating" value="2">
+                        <label for="2-star">2</label>
+                        <input type="radio" id="3-star" name="rating" value="3">
+                        <label for="3-star">3</label>
+                        <input type="radio" id="4-star" name="rating" value="4">
+                        <label for="4-star">4</label>
+                        <input type="radio" id="5-star" name="rating" value="5">
+                        <label for="5-star">5</label>
+                    </div>
+    
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+                <button type="submit" name="form" value="form">Send message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <h2>Subscribe to Newsletter</h2>
+        <p>Enter your email address to register to our newsletter subscription!</p>
+        <form action="connection.php" method="POST">
+            <input type="email" name="newsletter_email" placeholder="Email Address" required>
+            <button type="submit" name="newsletter" value="newsletter">Subscribe</button>
+        </form>
+    </footer>
+    
+</body>
+</html>

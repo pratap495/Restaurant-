@@ -1,0 +1,30 @@
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-list ul {
+    list-style: none;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.feature-list ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.feature-list img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}

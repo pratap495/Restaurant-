@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruva Drive Care - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a.signup-btn {
+            background: #ff5722;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding: 20px;
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ff5722;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .mission-statement h1 {
+                font-size: 2rem;
+            }
+
+            .mission-statement p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mission-statement h1 {
+                font-size: 1.5rem;
+            }
+
+            .mission-statement p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.JPG" alt="Dhruva Drive Care Logo">
+            
+        </div>
+        <h1>DHRUVA DRIVE CARE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#signup" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="mission-statement">
+            <h1>Mission Statement</h1>
+            <p>At Dhruva Drive Care, we are committed to providing the highest quality car cleaning services to our clients. Our team of experts uses the latest technology and techniques to ensure that your car looks and feels brand new. We pride ourselves on our attention to detail, customer-first philosophy, and commitment to excellence. With us, your satisfaction is guaranteed.</p>
+        </section>
+        <section class="image">
+            <img src="miss.jpg" alt="Car Detailing">
+        </section>
+    </main>
+    <main class="main-contact">
+        <section class="contact-info">
+            <h1>Have Questions?</h1>
+            <p>Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
+            <p><strong>Emergency? Call Us:</strong></p>
+            <p>+91 95534 01064</p>
+            <p><strong>Send Us Mail:</strong></p>
+            <p>Dhruvadrive123@gmail.com</p>
+            <p><strong>Find the Studio:</strong></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.07068989538!2d82.1108433!3d17.2153597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a377953f603e54b%3A0xc9fc88040573e3f0!2sKrishnavaram%20toll%20plaza!5e0!3m2!1sen!2sin!4v1717329492561!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="contact-form">
+            <form action="connection.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" name="form" value="form">Send message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>Subscribe to Newsletter</h2>
+        <p>Enter your email address to register to our newsletter subscription!</p>
+        <form action="connection.php" method="POST">
+            <input type="email" name="newsletter_email" placeholder="Email Address" required>
+            <button type="submit" name="newsletter" value="newsletter">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>
